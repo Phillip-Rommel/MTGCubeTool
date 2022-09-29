@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTGCubeTool.Domain.Tests", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTGCubeTool.Infrastructure.Test", "Tests\MTGCubeTool.Infrastructure.Test\MTGCubeTool.Infrastructure.Test.csproj", "{54CA8691-7867-4984-84BC-8A1DAC3CD8D2}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTGCubeTool.Web", "MTGCubeTool.Web\MTGCubeTool.Web.csproj", "{A869E978-BF69-4F25-B0F9-768223155A5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{54CA8691-7867-4984-84BC-8A1DAC3CD8D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54CA8691-7867-4984-84BC-8A1DAC3CD8D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54CA8691-7867-4984-84BC-8A1DAC3CD8D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A869E978-BF69-4F25-B0F9-768223155A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A869E978-BF69-4F25-B0F9-768223155A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A869E978-BF69-4F25-B0F9-768223155A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A869E978-BF69-4F25-B0F9-768223155A5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
