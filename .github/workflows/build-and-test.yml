@@ -1,0 +1,23 @@
+name: 🛠 Build and Test
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build_and_test:
+    name: 🛠 Build and Test
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🛒 Checkout
+      uses: actions/checkout@v3
+
+    - name: 🟣 Setup dotnet
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '6.0.x'
+
+    - name: 🛠 Build
+      run : dotnet build
+
+    - name: Test
+      run: dotnet test --no-build  
