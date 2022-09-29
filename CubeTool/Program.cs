@@ -57,6 +57,12 @@ namespace CubeTool
             Console.WriteLine("Enter the total number of land cards:");
             _totalLandCards = Convert.ToInt32(Console.ReadLine());
 
+            if (CalculateTotalEnteredCards() != _totalCubeCards)
+            {
+                Console.WriteLine("Please check your entered numbers. They seem not to fit to the toal amount of cards.");
+                return;
+            }
+
             Console.WriteLine("Here is your cube:");
             Console.WriteLine($"Total cards:{_totalCubeCards}");
             Console.WriteLine($"Cards per booster:{_cardsPerBooster}");
@@ -70,9 +76,23 @@ namespace CubeTool
             Console.WriteLine($"Total colorless cards:{_totalColorlessCards}");
             Console.WriteLine($"Total land cards:{_totalLandCards}");
 
+
             var boosters = CalculateBoosters();
             PrintBoosters(boosters);
             PrintToCsv(boosters);
+        }
+
+        private static int CalculateTotalEnteredCards()
+        {
+            return
+            _totalBlackCards +
+            _totalBlueCards +
+            _totalColorlessCards +
+            _totalGreenCards +
+            _totalLandCards +
+            _totalMultiColorCards +
+            _totalRedCards +
+            _totalWhiteCards;
         }
 
         private static void PrintToCsv(Booster[] boosters)
@@ -87,7 +107,7 @@ namespace CubeTool
                 stringWriter.WriteLine($"{i};{booster.Black};{booster.Blue};{booster.Green};{booster.Red};{booster.White};{booster.MultiColor};{booster.Colorless};{booster.Land}");
             }
 
-            string filePath = "/Users/PhillipRommel/Workspace/TestFolder/cube.csv";
+            string filePath = @"C:\CubeTool\cube.csv";
 
             Console.WriteLine(filePath);
 
