@@ -1,13 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubeTool", "CubeTool\CubeTool.csproj", "{48017B66-7DE7-401E-85CF-7268F416E663}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CubeTool", "CubeTool\CubeTool.csproj", "{48017B66-7DE7-401E-85CF-7268F416E663}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTGCubeTool.Domain", "MTGCubeTool.Domain\MTGCubeTool.Domain.csproj", "{458FE6B9-A9E2-4EEA-9DE0-B03D5895CC53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTGCubeTool.Domain", "MTGCubeTool.Domain\MTGCubeTool.Domain.csproj", "{458FE6B9-A9E2-4EEA-9DE0-B03D5895CC53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTGCubeTool.Application", "MTGCubeTool.Application\MTGCubeTool.Application.csproj", "{917328DB-6966-444E-AB43-9B0D84BD7992}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTGCubeTool.Application", "MTGCubeTool.Application\MTGCubeTool.Application.csproj", "{917328DB-6966-444E-AB43-9B0D84BD7992}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTGCubeTool.Infrastructure", "MTGCubeTool.Infrastructure\MTGCubeTool.Infrastructure.csproj", "{9B7415DC-1BBC-4B26-848D-847E6413F84C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTGCubeTool.Infrastructure", "MTGCubeTool.Infrastructure\MTGCubeTool.Infrastructure.csproj", "{9B7415DC-1BBC-4B26-848D-847E6413F84C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C8E3B5A4-1157-44F6-8260-093D70F2A228}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTGCubeTool.Application.Test", "Tests\MTGCubeTool.Application.Test\MTGCubeTool.Application.Test.csproj", "{88AC2738-5192-408B-92C9-4F1D5A36715D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTGCubeTool.Domain.Tests", "Tests\MTGCubeTool.Domain.Tests\MTGCubeTool.Domain.Tests.csproj", "{820E66E6-C135-4E5E-BC40-3CB411408698}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTGCubeTool.Infrastructure.Test", "Tests\MTGCubeTool.Infrastructure.Test\MTGCubeTool.Infrastructure.Test.csproj", "{54CA8691-7867-4984-84BC-8A1DAC3CD8D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,5 +41,28 @@ Global
 		{9B7415DC-1BBC-4B26-848D-847E6413F84C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B7415DC-1BBC-4B26-848D-847E6413F84C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B7415DC-1BBC-4B26-848D-847E6413F84C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88AC2738-5192-408B-92C9-4F1D5A36715D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88AC2738-5192-408B-92C9-4F1D5A36715D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88AC2738-5192-408B-92C9-4F1D5A36715D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88AC2738-5192-408B-92C9-4F1D5A36715D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{820E66E6-C135-4E5E-BC40-3CB411408698}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{820E66E6-C135-4E5E-BC40-3CB411408698}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{820E66E6-C135-4E5E-BC40-3CB411408698}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{820E66E6-C135-4E5E-BC40-3CB411408698}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54CA8691-7867-4984-84BC-8A1DAC3CD8D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54CA8691-7867-4984-84BC-8A1DAC3CD8D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54CA8691-7867-4984-84BC-8A1DAC3CD8D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54CA8691-7867-4984-84BC-8A1DAC3CD8D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{88AC2738-5192-408B-92C9-4F1D5A36715D} = {C8E3B5A4-1157-44F6-8260-093D70F2A228}
+		{820E66E6-C135-4E5E-BC40-3CB411408698} = {C8E3B5A4-1157-44F6-8260-093D70F2A228}
+		{54CA8691-7867-4984-84BC-8A1DAC3CD8D2} = {C8E3B5A4-1157-44F6-8260-093D70F2A228}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F77AE96-EDE9-43EB-B1A1-DCEF3D82F9F9}
 	EndGlobalSection
 EndGlobal
