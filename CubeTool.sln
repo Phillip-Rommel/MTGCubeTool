@@ -13,13 +13,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTGCubeTool.Infrastructure"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C8E3B5A4-1157-44F6-8260-093D70F2A228}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTGCubeTool.Application.Test", "Tests\MTGCubeTool.Application.Test\MTGCubeTool.Application.Test.csproj", "{88AC2738-5192-408B-92C9-4F1D5A36715D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTGCubeTool.Application.Test", "Tests\MTGCubeTool.Application.Test\MTGCubeTool.Application.Test.csproj", "{88AC2738-5192-408B-92C9-4F1D5A36715D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTGCubeTool.Domain.Tests", "Tests\MTGCubeTool.Domain.Tests\MTGCubeTool.Domain.Tests.csproj", "{820E66E6-C135-4E5E-BC40-3CB411408698}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTGCubeTool.Domain.Tests", "Tests\MTGCubeTool.Domain.Tests\MTGCubeTool.Domain.Tests.csproj", "{820E66E6-C135-4E5E-BC40-3CB411408698}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTGCubeTool.Infrastructure.Test", "Tests\MTGCubeTool.Infrastructure.Test\MTGCubeTool.Infrastructure.Test.csproj", "{54CA8691-7867-4984-84BC-8A1DAC3CD8D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTGCubeTool.Infrastructure.Test", "Tests\MTGCubeTool.Infrastructure.Test\MTGCubeTool.Infrastructure.Test.csproj", "{54CA8691-7867-4984-84BC-8A1DAC3CD8D2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTGCubeTool.Web", "MTGCubeTool.Web\MTGCubeTool.Web.csproj", "{A869E978-BF69-4F25-B0F9-768223155A5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubeTool.Tests", "Tests\CubeTool.Tests\CubeTool.Tests.csproj", "{C9D4A6AE-5A56-4370-8006-0500D330EE8F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,10 @@ Global
 		{A869E978-BF69-4F25-B0F9-768223155A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A869E978-BF69-4F25-B0F9-768223155A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A869E978-BF69-4F25-B0F9-768223155A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9D4A6AE-5A56-4370-8006-0500D330EE8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9D4A6AE-5A56-4370-8006-0500D330EE8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9D4A6AE-5A56-4370-8006-0500D330EE8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9D4A6AE-5A56-4370-8006-0500D330EE8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +73,7 @@ Global
 		{88AC2738-5192-408B-92C9-4F1D5A36715D} = {C8E3B5A4-1157-44F6-8260-093D70F2A228}
 		{820E66E6-C135-4E5E-BC40-3CB411408698} = {C8E3B5A4-1157-44F6-8260-093D70F2A228}
 		{54CA8691-7867-4984-84BC-8A1DAC3CD8D2} = {C8E3B5A4-1157-44F6-8260-093D70F2A228}
+		{C9D4A6AE-5A56-4370-8006-0500D330EE8F} = {C8E3B5A4-1157-44F6-8260-093D70F2A228}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1F77AE96-EDE9-43EB-B1A1-DCEF3D82F9F9}
