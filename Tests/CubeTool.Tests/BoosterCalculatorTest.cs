@@ -40,7 +40,9 @@ namespace CubeTool.Tests
             var result = _boosterCalculator.CalculateBoosters(settings);
 
             // assert
-            result.Should().AllSatisfy(x =>
+            result
+                .Should()
+                .AllSatisfy(x =>
                 {
                     x.GetTotalCards().Should().Be(cardsPerBooster);
                 });
@@ -74,7 +76,9 @@ namespace CubeTool.Tests
             var result = _boosterCalculator.CalculateBoosters(settings);
 
             // assert
-            result.Should().AllSatisfy(x =>
+            result
+                .Should()
+                .AllSatisfy(x =>
             {
                 x.GetTotalCards().Should().Be(cardsPerBooster);
             });
